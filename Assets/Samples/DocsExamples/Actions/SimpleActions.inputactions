@@ -39,7 +39,7 @@
                 {
                     "name": "",
                     "id": "c48db537-b211-412a-a86a-d31614bebb5d",
-                    "path": "<Gamepad>{Player1}/buttonSouth",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

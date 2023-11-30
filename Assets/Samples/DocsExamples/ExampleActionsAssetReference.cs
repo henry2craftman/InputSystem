@@ -22,6 +22,7 @@ public class DocsExampleActionsAssetReference : MonoBehaviour
     {
         // our update loop polls the "move" action value each frame
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
+        transform.position += new Vector3(moveVector.x, 0, moveVector.y) * Time.deltaTime;
     }
 
     private void OnJump(InputAction.CallbackContext context)

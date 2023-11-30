@@ -15,10 +15,12 @@ public class DocsExampleActionsAssetCsWrapper : MonoBehaviour
         actions.gameplay.jump.performed += OnJump;
     }
 
+    Vector2 moveVector;
     void Update()
     {
         // our update loop polls the "move" action value each frame
-        Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
+        moveVector = actions.gameplay.move.ReadValue<Vector2>();
+        transform.position += new Vector3(moveVector.x, 0, moveVector.y) * Time.deltaTime;
     }
 
     private void OnJump(InputAction.CallbackContext context)

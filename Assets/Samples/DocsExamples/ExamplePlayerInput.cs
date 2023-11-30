@@ -12,11 +12,13 @@ public class ExamplePlayerInput : MonoBehaviour
     {
         // read the value for the "move" action each event call
         moveAmount = context.ReadValue<Vector2>();
+        print("isMoving + " + moveAmount);
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
         // your jump code goes here.
+        print("Jump!");
     }
 
     public void Update()
